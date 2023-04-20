@@ -13,7 +13,7 @@ In2=Pin(2,Pin.OUT)
 
 #OUT3  and OUT4
 In3=Pin(4,Pin.OUT)  
-In4=Pin(3,Pin.OUT)fdfdfasdsa
+In4=Pin(3,Pin.OUT)
 # Forward
 def move_forward():
     In1.high()
@@ -25,8 +25,7 @@ def move_forward():
 def move_backward():
     In1.low()
     In2.high()
-    In3.low()
-    In4.high()
+    
     
 #Turn Right
 def turn_right():
@@ -49,16 +48,24 @@ def stop():
     In3.low()
     In4.low()
     
-while True:
-    move_forward()
-    print("Forward")
-    time.sleep(2)
-    stop()
-    print("Stop")
-    time.sleep(2)
-    move_backward()
-    print("Backward")   
-    time.sleep(2)
-    stop()
-    print("Stop")
-    time.sleep(2)
+#while True:
+    #move_forward()
+    #print("Forward")
+    #time.sleep(2)
+    #stop()
+    #print("Stop")
+    #time.sleep(2)
+    #move_backward()
+    #print("Backward")   
+    #time.sleep(2)
+    #stop()
+    #print("Stop")
+   # time.sleep(2)
+    
+input("Press Enter to move forward")
+    
+
+print("Moved forward")
+move_forward()
+time.sleep(0.5)
+stop()
